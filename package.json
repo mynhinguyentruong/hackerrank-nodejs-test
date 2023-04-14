@@ -6,7 +6,8 @@
     "start": "node bin/www",
     "prestart": "npm install",
     "pretest": "npm install",
-    "test": "cross-env PORT=8001 ./node_modules/.bin/mocha test"
+    "test": "cross-env PORT=8001 ./node_modules/.bin/mocha test",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "bluebird": "^3.7.2",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "nodemon": "^2.0.22"
   }
 }

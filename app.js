@@ -23,5 +23,7 @@ app.use('/', indexRouter);
 
 app.use('/recipes', recipesRouter);
 
+app.listen(8000, () => console.log("App is running ...."))
+
 
 module.exports = app;
